@@ -1,0 +1,50 @@
+@import url("/fonts/stylesheet.css");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@200;400;500;600;700;800&family=Urbanist:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+@font-face {
+    font-family: Next Regular;
+    src: url(../public/fonts/NyghtSerif-RegularItalic.ttf);
+}
+
+@font-face {
+    font-family: Next Medium;
+    src: url(../public/fonts/NyghtSerif-MediumItalic.ttf);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #000;
+
+    @media (prefers-color-scheme: light) {
+        background-color: #fff;
+    }
+}
+
+::selection {
+    background-color: #fff;
+    color: #000;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
