@@ -25,7 +25,7 @@ const AdminIndex: NextPage<AdminIndexPageProps> = ({ courses }) => {
 
   if (session?.user?.email === 'codewithapu@gmail.com') {
     return (
-      <>
+      <div style={{marginTop:100}}>
         <Heading>Admin</Heading>
         <Heading as="h2">Your courses</Heading>
 
@@ -40,7 +40,7 @@ const AdminIndex: NextPage<AdminIndexPageProps> = ({ courses }) => {
         <Link href="/admin/courses/new">
           <Button>Create a course</Button>
         </Link>
-      </>
+      </div>
     );
   }
   return <p>Access Denied</p>;

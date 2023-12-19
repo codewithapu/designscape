@@ -53,7 +53,7 @@ const AdminCourseEdit: NextPage<AdminCourseEditPageProps> = ({ course }) => {
 
   if (session) {
     return (
-      <div className='grid md:grid-cols-2'>
+      <div className='grid md:grid-cols-2' style={{marginTop:100}}>
         <div>
           <Heading as='h2'>{course.name}</Heading>
           <CourseForm onSubmit={onSubmit} course={course} isLoading={mutation.isLoading} />
