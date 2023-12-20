@@ -165,7 +165,6 @@ $CarbonDust: #232323;
                 font-family: Nyght Serif;
                 font-size: 4.5rem;
                 font-weight: 400;
-                font-style: italic;
                 letter-spacing: 0.1rem;
                 text-transform: lowercase;
                 line-height: 100%;
@@ -183,7 +182,7 @@ $CarbonDust: #232323;
                 color: #787878;
                 font-family: Uncut Regular;
                 font-weight: 400;
-                letter-spacing: -0.01rem;
+                // letter-spacing: -0.01rem;
                 font-size: 2rem;
                 .Highlight {
                     display: inline-flex;
