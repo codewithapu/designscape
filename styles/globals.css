@@ -19,28 +19,28 @@
 
 @font-face {
     font-family: Next Regular;
-    src: url(../public/fonts/NyghtSerif-RegularItalic.woff);
+    src: url(https://eduburner.vercel.app/fonts/NyghtSerif-RegularItalic.woff) format('woff');
 }
 
 @font-face {
     font-family: Next Medium;
-    src: url(../public/fonts/NyghtSerif-MediumItalic.ttf);
+    src: url(https://eduburner.vercel.app/fonts/NyghtSerif-MediumItalic.ttf);
 }
 
 
 @font-face {
     font-family: Uncut Regular;
-    src: url(../public/fonts/Webfonts/UncutSans-Regular.woff);
+    src: url(https://eduburner.vercel.app/fonts/Webfonts/UncutSans-Regular.woff) format('woff');
 }
 
 @font-face {
     font-family: Uncut Medium;
-    src: url(../public/fonts/Webfonts/UncutSans-Medium.woff);
+    src: url(https://eduburner.vercel.app/fonts/Webfonts/UncutSans-Medium.woff) format('woff');
 }
 
 @font-face {
     font-family: Uncut Bold;
-    src: url(../public/fonts/Webfonts/UncutSans-Bold.woff);
+    src: url(https://eduburner.vercel.app/.vercel.app/fonts/Webfonts/UncutSans-Bold.woff) format('woff');
 }
 
 ::-webkit-scrollbar {
