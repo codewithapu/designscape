@@ -19,7 +19,7 @@
 
 @font-face {
     font-family: Next Regular;
-    src: url(https://eduburner.vercel.app/fonts/NyghtSerif-RegularItalic.woff) format('woff');
+    src: url(../public/fonts/NyghtSerif-RegularItalic.woff2) format('woff2');
 }
 
 @font-face {
