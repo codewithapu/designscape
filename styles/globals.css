@@ -19,12 +19,28 @@
 
 @font-face {
     font-family: Next Regular;
-    src: url(../public/fonts/NyghtSerif-RegularItalic.ttf);
+    src: url(../public/fonts/NyghtSerif-RegularItalic.woff);
 }
 
 @font-face {
     font-family: Next Medium;
     src: url(../public/fonts/NyghtSerif-MediumItalic.ttf);
+}
+
+
+@font-face {
+    font-family: Uncut Regular;
+    src: url(../public/fonts/Webfonts/UncutSans-Regular.woff);
+}
+
+@font-face {
+    font-family: Uncut Medium;
+    src: url(../public/fonts/Webfonts/UncutSans-Medium.woff);
+}
+
+@font-face {
+    font-family: Uncut Bold;
+    src: url(../public/fonts/Webfonts/UncutSans-Bold.woff);
 }
 
 ::-webkit-scrollbar {
@@ -35,7 +51,7 @@ body {
     background-color: #000;
 
     @media (prefers-color-scheme: light) {
-        background-color: #fff;
+        background-color: #000;
     }
 }
 
