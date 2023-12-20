@@ -150,8 +150,8 @@ $CarbonDust: #232323;
         .SectionTitle {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
-            min-width: 50%;
+            gap: 3rem;
+            min-width: 45rem;
             .Title {
                 color: #5f5f5f;
                 font-family: Inter;
@@ -163,7 +163,7 @@ $CarbonDust: #232323;
             .Description {
                 color: #f7f7f7;
                 font-family: Nyght Serif;
-                font-size: 5rem;
+                font-size: 4.5rem;
                 font-weight: 400;
                 font-style: italic;
                 letter-spacing: 0.1rem;
@@ -177,6 +177,54 @@ $CarbonDust: #232323;
                     fill: #00a878;
                 }
             }
+
+            .BottomLiner {
+                display: inline-flex;
+                color: #787878;
+                font-family: Uncut Sans;
+                font-weight: 500;
+                letter-spacing: -0.01rem;
+                font-size: 2rem;
+                .Highlight {
+                    display: inline-flex;
+                    margin: 0rem 0.5rem;
+                    color: #fff;
+                    position: relative;
+                    cursor: pointer;
+                    padding-bottom: 0.3rem;
+
+                    &:hover {
+                        .Before {
+                            .After {
+                                opacity: 100%;
+                                transform: translateX(0rem);
+                            }
+                        }
+                    }
+                    .Before {
+                        position: absolute;
+                        background-color: #202020;
+                        width: 100%;
+                        height: 0.2rem;
+                        bottom: 0;
+
+                        overflow: hidden;
+                        @include Smooth();
+
+                        .After {
+                            // display: none;
+                            position: absolute;
+                            background-color: #fff;
+                            width: 100%;
+                            transform: translateX(-100%);
+                            height: 0.2rem;
+                            opacity: 0;
+                            bottom: 0;
+                            @include Smooth();
+                        }
+                    }
+                }
+            }
         }
         .OriginalCards {
             max-width: 180rem;
@@ -185,7 +233,7 @@ $CarbonDust: #232323;
             flex-direction: row;
             gap: 4rem;
             justify-content: space-between;
-            .CardsBlock{
+            .CardsBlock {
                 display: flex;
                 align-items: center;
                 gap: 1rem;
@@ -193,13 +241,15 @@ $CarbonDust: #232323;
                 .Card {
                     display: flex;
                     height: 100%;
+                    width: 100%;
                     max-width: 40rem;
+                    min-width: 40rem;
                     background-color: #0f1012;
                     border-radius: 1.6rem;
                     overflow: hidden;
                     position: relative;
                     flex-direction: column;
-    
+
                     .CardBanner {
                         // height: 30rem;
                         z-index: 50;
@@ -211,7 +261,7 @@ $CarbonDust: #232323;
                         .CardBannerImage {
                             object-fit: cover;
                         }
-    
+
                         .Badge {
                             position: absolute;
                             right: 0;
@@ -221,12 +271,12 @@ $CarbonDust: #232323;
                             justify-content: center;
                             align-items: center;
                             gap: 1rem;
-    
+
                             border-radius: 0.6rem;
                             background: #fff083;
-    
+
                             color: #000;
-    
+
                             font-family: Uncut Medium;
                             font-size: 1.4rem;
                             font-style: normal;
@@ -235,7 +285,7 @@ $CarbonDust: #232323;
                             text-transform: uppercase;
                         }
                     }
-    
+
                     .Pricing {
                         padding: 2rem 3rem;
                         display: flex;
@@ -245,13 +295,13 @@ $CarbonDust: #232323;
                         gap: 1rem;
                         border-top: 0.2rem solid #252525;
                         border-bottom: 0.2rem solid #252525;
-    
+
                         .AuthorBadge {
                             height: 4rem;
                             user-select: none;
                             width: 4rem;
                         }
-    
+
                         .Price {
                             color: #eaeaea;
                             font-family: Urbanist;
@@ -260,9 +310,13 @@ $CarbonDust: #232323;
                             font-weight: 500;
                             line-height: 131%; /* 3.275rem */
                             letter-spacing: 0.025rem;
+                            .RupeeSymbol {
+                                margin-right: 0.3rem;
+                                color: #8d8d8d;
+                            }
                         }
                     }
-    
+
                     .CardDetails {
                         padding: 3rem;
                         display: flex;
@@ -272,11 +326,11 @@ $CarbonDust: #232323;
                             color: #f5f5f5;
                             font-family: Uncut Medium;
                             font-size: 2rem;
-                            font-weight: 500;
+                            font-weight: 400;
                             line-height: 150%;
                             letter-spacing: 0.02rem;
                         }
-    
+
                         .CardDescription {
                             color: #8c8c8c;
                             font-family: Uncut Regular;
@@ -286,7 +340,7 @@ $CarbonDust: #232323;
                             line-height: 150%;
                         }
                     }
-    
+
                     .CardButton {
                         z-index: 90;
                         bottom: 0;
@@ -307,8 +361,6 @@ $CarbonDust: #232323;
                     }
                 }
             }
-
-
         }
     }
 }

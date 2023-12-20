@@ -68,9 +68,19 @@ const Home: React.FC = () => {
                                 </svg>
                                 Refined, exclusive courses <br />
                                 reimagined experience</h3>
+
+                            <h4 className={styles.BottomLiner}>explore best curated courses from
+                                <div className={styles.Highlight}>
+                                    academy
+                                    <div className={styles.Before}>
+                                        <div className={styles.After}></div>
+                                    </div>
+                                </div>
+                            </h4>
                         </div>
 
                         <div className={styles.CardsBlock}>
+
                             <div className={styles.Card}>
                                 <div className={styles.CardBanner}>
                                     <h3 className={styles.Badge}>trending</h3>
@@ -90,7 +100,10 @@ const Home: React.FC = () => {
 
                                 <div className={styles.Pricing}>
                                     <img draggable="false" className={styles.AuthorBadge} src="/dtficon.png" />
-                                    <p className={styles.Price}>₹ 3499</p>
+                                    <p className={styles.Price}>
+                                        <span className={styles.RupeeSymbol} style={{ fontSize: 15 }}>₹</span>
+                                        3499
+                                    </p>
                                 </div>
                                 <button className={styles.CardButton}>
                                     grab your seat now
@@ -122,13 +135,16 @@ const Home: React.FC = () => {
                                 <div className={styles.CardDetails}>
                                     <h1 className={styles.CardTitle}>Design Scape : Odyssey to human centric design crafting user interfaces</h1>
                                     <p className={styles.CardDescription}>
-                                        Learn Figma, variables, components, building scalable design systems, pages with latest design trends.
+                                        Learn Figma, variables, building scalable design systems, pages with latest design trends.
                                     </p>
                                 </div>
 
                                 <div className={styles.Pricing}>
                                     <img draggable="false" className={styles.AuthorBadge} src="/dtficon.png" />
-                                    <p className={styles.Price}>₹ 3499</p>
+                                    <p className={styles.Price}>
+                                        <span className={styles.RupeeSymbol} style={{ fontSize: 15 }}>₹</span>
+                                        3499
+                                    </p>
                                 </div>
                                 <button className={styles.CardButton}>
                                     grab your seat now
@@ -146,6 +162,7 @@ const Home: React.FC = () => {
                                     </svg>
                                 </button>
                             </div>
+
                         </div>
 
 
