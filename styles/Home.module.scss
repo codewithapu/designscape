@@ -16,7 +16,6 @@ $CarbonDust: #232323;
     overflow: hidden;
     gap: 10rem;
     flex-direction: column;
-    // margin-top: 8rem;
 
     .HeroBanner {
         padding: 0rem 3rem;
@@ -104,7 +103,7 @@ $CarbonDust: #232323;
                     font-size: 1.3rem;
                     font-style: normal;
                     font-weight: 700;
-                    line-height: 87.6%; /* 1.4016rem */
+                    line-height: 87.6%; 
                     letter-spacing: 0.016rem;
                 }
             }
@@ -122,7 +121,6 @@ $CarbonDust: #232323;
             border-radius: 0rem 0rem 1rem 1rem;
             width: 100%;
             max-width: 180rem;
-            // height: 100%;
             user-select: none;
         }
         .BannerTrailer {
@@ -130,8 +128,6 @@ $CarbonDust: #232323;
             height: 40rem;
             width: 100%;
             max-width: 180rem;
-            // max-width: 150rem;
-
             object-fit: cover;
 
             border-radius: 2rem;
@@ -242,7 +238,7 @@ $CarbonDust: #232323;
                     height: 100%;
                     width: 100%;
                     max-width: 40rem;
-                    min-width: 40rem;
+                    // min-width: 40rem;
                     background-color: #0f1012;
                     border-radius: 1.6rem;
                     overflow: hidden;
