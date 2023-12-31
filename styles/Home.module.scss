@@ -11,23 +11,26 @@ $CarbonDust: #232323;
     display: flex;
     align-content: center;
     flex-direction: column;
-    padding: 2rem 0rem;
+    padding: 0rem 0rem;
     width: 100%;
     overflow: hidden;
     gap: 10rem;
     flex-direction: column;
 
     .HeroBanner {
-        padding: 0rem 3rem;
-        max-height: auto;
+        // padding: 0rem 3rem;
+        // max-height: auto;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         flex-direction: column;
         position: relative;
+        // border-radius: 3rem;
+        overflow: hidden;
 
         .Overlay {
+            overflow: hidden;
             position: absolute;
             bottom: 0;
             width: 100%;
@@ -103,13 +106,9 @@ $CarbonDust: #232323;
                     font-size: 1.3rem;
                     font-style: normal;
                     font-weight: 700;
-                    line-height: 87.6%; 
+                    line-height: 87.6%;
                     letter-spacing: 0.016rem;
                 }
-            }
-
-            &:hover {
-                gap: 2rem;
             }
         }
 
@@ -118,20 +117,22 @@ $CarbonDust: #232323;
             position: absolute;
             bottom: 0;
             height: 10rem;
-            border-radius: 0rem 0rem 1rem 1rem;
+            display: none;
             width: 100%;
-            max-width: 180rem;
+            // max-width: 180rem;
             user-select: none;
+            padding: 0rem 3rem;
+            border-bottom-right-radius: 2rem;
+            border-bottom-left-radius: 2rem;
         }
         .BannerTrailer {
             z-index: 10;
-            height: 40rem;
+            height: 50rem;
             width: 100%;
-            max-width: 180rem;
+            max-width: 181rem;
             object-fit: cover;
 
-            border-radius: 2rem;
-            box-shadow: 0px -260px 98.7px 0px rgba(0, 0, 0, 0.5) inset;
+            // border-radius: 2rem;
         }
     }
 
@@ -156,6 +157,7 @@ $CarbonDust: #232323;
                 font-weight: 500;
                 letter-spacing: 1rem;
             }
+
             .Description {
                 color: #f7f7f7;
                 font-family: Nyght Serif;
@@ -178,7 +180,6 @@ $CarbonDust: #232323;
                 color: #787878;
                 font-family: Uncut Regular;
                 font-weight: 400;
-                // letter-spacing: -0.01rem;
                 font-size: 2rem;
                 .Highlight {
                     display: inline-flex;
@@ -220,6 +221,35 @@ $CarbonDust: #232323;
                     }
                 }
             }
+
+            .CourseFeatures {
+                max-width: 40rem;
+                display: flex;
+                gap: 1rem;
+                flex-direction: row;
+                flex-wrap: wrap;
+                .FeatureList {
+                    list-style-type: none;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    gap: 1rem;
+                    background-color: #111;
+                    padding: 1rem 1.5rem 1rem 1rem;
+                    border-radius: 1rem;
+
+                    color: #fff;
+                    font-size: 1.5rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    font-family: Uncut Regular;
+                    text-wrap: nowrap;
+                    .FeatureIcon {
+                        height: 3rem;
+                    }
+                }
+            }
         }
         .OriginalCards {
             max-width: 180rem;
@@ -240,8 +270,7 @@ $CarbonDust: #232323;
                     max-width: 40rem;
                     // min-width: 40rem;
                     background-color: #0f1012;
-                    border-radius: 1.6rem;
-                    overflow: hidden;
+                    border-radius: 2.6rem;
                     position: relative;
                     flex-direction: column;
 
@@ -260,24 +289,14 @@ $CarbonDust: #232323;
                         .Badge {
                             position: absolute;
                             right: 0;
+                            transform: translateY(-6rem);
                             margin: 2rem;
                             display: inline-flex;
-                            padding: 1rem;
                             justify-content: center;
                             align-items: center;
                             gap: 1rem;
 
-                            border-radius: 0.6rem;
-                            background: #fff083;
-
-                            color: #000;
-
-                            font-family: Uncut Medium;
-                            font-size: 1.4rem;
-                            font-style: normal;
-                            font-weight: 500;
-                            line-height: 131%;
-                            text-transform: uppercase;
+                            border-radius: 60rem;
                         }
                     }
 

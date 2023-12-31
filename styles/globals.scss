@@ -1,25 +1,20 @@
 @import url("/fonts/stylesheet.css");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@200;400;500;600;700;800&family=Urbanist:wght@200;300;400;500;600;700;800;900&display=swap");
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
 
 * {
     -webkit-tap-highlight-color: transparent;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-
 
 @font-face {
     font-family: Nyght Serif;
-    src: url("https://eduburner.in/Fonts/NyghtSerif-RegularItalic.ttf") format('truetype');
+    src: url("https://eduburner.in/Fonts/NyghtSerif-RegularItalic.ttf") format("truetype");
 }
 
 @font-face {
@@ -27,31 +22,40 @@
     src: url(https://eduburner.vercel.app/fonts/NyghtSerif-MediumItalic.ttf);
 }
 
-
 @font-face {
     font-family: Uncut Regular;
-    src: url(https://eduburner.vercel.app/fonts/Webfonts/UncutSans-Regular.woff) format('woff');
+    src: url(https://eduburner.vercel.app/fonts/Webfonts/UncutSans-Regular.woff) format("woff");
 }
 
 @font-face {
     font-family: Uncut Medium;
-    src: url(https://eduburner.vercel.app/fonts/Webfonts/UncutSans-Medium.woff) format('woff');
+    src: url(https://eduburner.vercel.app/fonts/Webfonts/UncutSans-Medium.woff) format("woff");
 }
 
 @font-face {
     font-family: Uncut Bold;
-    src: url(https://eduburner.vercel.app/.vercel.app/fonts/Webfonts/UncutSans-Bold.woff) format('woff');
+    src: url(https://eduburner.vercel.app/.vercel.app/fonts/Webfonts/UncutSans-Bold.woff) format("woff");
 }
+
+
+// Edu Burner Modern Font Starts
+
+@font-face {
+    font-family: Burner Font;
+    src: url(/fonts/BurnerFont.woff) format("woff");
+}
+
+// Edu Burner Modern Font Ends
 
 ::-webkit-scrollbar {
     display: none;
 }
 
 body {
-    background-color: #000;
+    background-color: #fff;
 
-    @media (prefers-color-scheme: light) {
-        background-color: #000;
+    @media (prefers-color-scheme: dark) {
+        background-color: #fff;
     }
 }
 

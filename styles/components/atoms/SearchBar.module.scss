@@ -1,0 +1,25 @@
+.SearchBar {
+    display: flex;
+    padding: 1.4rem 1.4rem;
+    align-items: center;
+    gap: 0.6rem;
+    flex-shrink: 0;
+    width: 100%;
+    flex: 1 1 auto;
+
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -0.05rem;
+    color: #5a5a5a;
+    backdrop-filter: blur(20px);
+
+    background: #ffffff7e;
+    // background: #222222;
+    .SearchIcon {
+        height: 2.4rem;
+        fill: #111;
+    }
+
+    font-family: Burner Font;
+}
