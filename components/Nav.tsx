@@ -25,7 +25,7 @@ const Nav: React.FC = () => {
 
         <div className={styles.TopContent}>
 
-          <LogoBadge />
+          <LogoBadge width={30} height={30} />
 
           <SearchBar />
 
@@ -73,6 +73,7 @@ const Nav: React.FC = () => {
             </div>
 
             {session ? (
+
               <div className={styles.User}>
                 {/* Signed in as {session.user?.email} <br /> */}
 
@@ -88,15 +89,16 @@ const Nav: React.FC = () => {
                 <button className='underline' onClick={() => signOut()}>Sign out</button>
               </div>
 
-
             ) : (
 
               <button className={styles.SignInButton} onClick={() => signIn()}>
-                <svg xmlns="http://www.w3.org/2000/svg" className={styles.AccountLogo} viewBox="0 0 40 40" fill="none">
+                {/* <svg xmlns="http://www.w3.org/2000/svg" className={styles.AccountLogo} viewBox="0 0 40 40" fill="none">
                   <path d="M19.5854 7.74219C16.1472 7.74219 13.341 10.5485 13.341 13.9865C13.341 17.4246 16.1472 20.2308 19.5854 20.2308C23.0234 20.2308 25.8296 17.4246 25.8296 13.9865C25.8296 10.5485 23.0234 7.74219 19.5854 7.74219ZM19.5854 9.52633C22.0592 9.52633 24.0456 11.5126 24.0456 13.9865C24.0456 16.4604 22.0592 18.4467 19.5854 18.4467C17.1114 18.4467 15.1251 16.4604 15.1251 13.9865C15.1251 11.5126 17.1114 9.52633 19.5854 9.52633ZM13.341 22.0149C9.89709 22.0149 7.09668 24.8154 7.09668 28.2593V32.7195H7.98875H32.074V28.2593C32.074 24.8154 29.2736 22.0149 25.8296 22.0149H13.341ZM13.341 23.7991H25.8296C28.3161 23.7991 30.2899 25.7729 30.2899 28.2593V30.9355H8.88075V28.2593C8.88075 25.7729 10.8546 23.7991 13.341 23.7991Z"
 
                   />
-                </svg>
+                </svg> */}
+
+                experience now
               </button>
             )}
           </div>

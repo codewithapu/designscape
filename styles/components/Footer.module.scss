@@ -20,14 +20,15 @@
         }
 
         .FooterLabel {
-            font-family: Nyght Serif;
-            font-size: 6rem;
-            color: $crystalwhite;
+            font-family: Burner Font;
+            font-size: 5rem;
+            letter-spacing: -0.2rem;
+            color: $carbonblack;
             font-weight: 400;
             line-height: 100%;
 
             span {
-                color: #1ad36f;
+                color: $burnertheme;
             }
         }
 
@@ -40,22 +41,22 @@
                 text-decoration: none;
                 color: $slateblack;
 
-                font-family: Inter;
-                font-size: 2.2rem;
+                font-family: Burner Font;
+                font-size: 2rem;
                 font-style: normal;
-                font-weight: 600;
-                line-height: 100%; /* 2.8rem */
-                letter-spacing: -0.05rem;
+
+                line-height: 100%; 
+                letter-spacing: -0.01rem;
                 transition: 0.2s ease-in-out;
                 &:hover {
-                    color: $crystalwhite;
+                    color: $crystalblack;
                 }
             }
         }
 
         .Copyright {
-            color: $carbonblack;
-            font-family: Inter;
+            color: $crystalblack;
+            font-family: Burner Font;
             font-size: 1.3rem;
             font-style: normal;
             font-weight: 700;

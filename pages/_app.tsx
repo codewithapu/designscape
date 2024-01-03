@@ -36,7 +36,7 @@ function MyApp({
           <div><Toaster /></div>
         </QueryClientProvider>
       </SessionProvider>
-      <Footer />
+      {/* <Footer /> */}
     </>
 
   );
