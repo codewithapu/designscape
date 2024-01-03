@@ -5,7 +5,7 @@ import LogoBadge from "./atoms/LogoBadge";
 const Footer: React.FC = () => (
     <footer className={styles.Footer}>
         <div className={styles.FooterContainer}>
-            <LogoBadge/>
+            <LogoBadge height={10} width={10}/>
 
             <h2 className={styles.FooterLabel}>unlock your design potential <br />
                 with <span className={styles.Highlight}>designscape</span>
