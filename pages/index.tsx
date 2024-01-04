@@ -22,7 +22,6 @@ const Home: React.FC = () => {
                 <div className={styles.Container}>
 
                     <div className={styles.Updates}>
-                        <SCard />
                         <div className={styles.UpdatesContainer}>
                             <div className={styles.Heading}>
                                 <p className={styles.SubHeading}>b.creators - trendsetters </p>
@@ -35,6 +34,15 @@ const Home: React.FC = () => {
                                 <ReleaseCard name={'Supriya Mahato'} username={'apu'} profilelink={'/'} />
                             </div>
                         </div>
+
+                        <div className={styles.InnerContainer}>
+                            <SCard />
+                            <div className={styles.BannerVideo}>
+                                <video className={styles.Video}  src="Essentials/Banners/designscape.webm" loop autoPlay muted></video>
+                            </div>
+                        </div>
+
+
                     </div>
 
                 </div>

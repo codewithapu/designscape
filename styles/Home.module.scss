@@ -7,7 +7,7 @@ $CarbonDust: #232323;
     transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-@mixin SubTitle{
+@mixin SubTitle {
     font-family: Burner Font;
     font-size: 3rem;
     letter-spacing: -0.18rem;
@@ -18,7 +18,7 @@ $CarbonDust: #232323;
     // display: none;
 }
 
-@mixin SubHeading{
+@mixin SubHeading {
     font-family: Urbanist;
     font-size: 1.7rem;
     // letter-spacing: -0.02rem;
@@ -26,11 +26,11 @@ $CarbonDust: #232323;
     font-weight: 700;
 }
 
-.SubTitle{
+.SubTitle {
     @include SubTitle;
 }
 
-.SubHeading{
+.SubHeading {
     @include SubHeading;
     color: #686868;
 }
@@ -40,41 +40,69 @@ $CarbonDust: #232323;
     flex-direction: column;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     padding: 2rem 3rem;
     width: 100%;
     gap: 10rem;
+    background-color: #fff;
 
 
-    .Container{
+    .Container {
         display: flex;
         width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
         max-width: 180rem;
+        
     }
 
-    .Updates{
+    .Updates {
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 3rem;
-        .UpdatesContainer{
-            // padding: 4rem 1rem;
+        width: 100%;
+        .UpdatesContainer {
             display: flex;
             flex-direction: column;
             gap: 2rem;
-            .Heading{
+            .Heading {
                 display: flex;
                 flex-direction: column;
                 gap: 1.4rem;
             }
 
-            .Releases{
+            .Releases {
                 display: flex;
                 gap: 0.3rem;
                 flex-direction: column;
             }
         }
+
+        .InnerContainer{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.4rem;
+            width: 100%;
+            .BannerVideo {
+                display: flex;
+                height: 34rem;
+                background-color: #ebe6d2;
+                border-radius: 2rem;
+                border: 0.4rem solid #f4f0e3;
+    
+                overflow: hidden;
+    
+                width: 100%;
+                .Video {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
     }
 }
-
-
