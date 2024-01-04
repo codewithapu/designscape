@@ -3,6 +3,8 @@ import styles from '../styles/Home.module.scss';
 import Head from 'next/head';
 import Link from 'next/link';
 import SCard from 'components/molecules/SCard';
+import CreatorBadge from 'components/atoms/CreatorBadge';
+import ReleaseCard from 'components/molecules/ReleaseCard';
 
 
 const Home: React.FC = () => {
@@ -22,8 +24,16 @@ const Home: React.FC = () => {
                     <div className={styles.Updates}>
                         <SCard />
                         <div className={styles.UpdatesContainer}>
-                            <h2 className={styles.SubTitle}>News & Updates</h2>
-                            <p className={styles.SubHeading}>new release</p>
+                            <div className={styles.Heading}>
+                                <p className={styles.SubHeading}>b.creators - trendsetters </p>
+                                <h2 className={styles.SubTitle}>don't miss the <br />latest happenings</h2>
+                            </div>
+
+                            <div className={styles.Releases}>
+                                <ReleaseCard name={'DesignTheFuture'} username={'dtf'} profilelink={'/'} />
+                                <ReleaseCard name={'Edu Burner'} username={'eduburner'} profilelink={'/'} />
+                                <ReleaseCard name={'Supriya Mahato'} username={'apu'} profilelink={'/'} />
+                            </div>
                         </div>
                     </div>
 
