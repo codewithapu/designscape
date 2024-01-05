@@ -30,9 +30,9 @@ const Home: React.FC = () => {
                             </div>
 
                             <div className={styles.Releases}>
-                                <ReleaseCard name={'DesignTheFuture'} username={'dtf'} profilelink={'/'} />
-                                <ReleaseCard name={'Edu Burner'} username={'eduburner'} profilelink={'/'} />
-                                <ReleaseCard name={'Supriya Mahato'} username={'apu'} profilelink={'/'} />
+                                <ReleaseCard creatorlogo={'/Creators/dtficon.png'} name={'DesignTheFuture'} username={'dtf'} profilelink={'/'} />
+                                <ReleaseCard creatorlogo={'/Creators/burnericon.png'} name={'Edu Burner'} username={'eduburner'} profilelink={'/'} />
+                                <ReleaseCard creatorlogo={'/Creators/apuicon.png'} name={'Supriya Mahato'} username={'apu'} profilelink={'/'} />
                             </div>
                         </div>
 
@@ -40,12 +40,16 @@ const Home: React.FC = () => {
                             <SCard />
                             <div className={styles.BannerVideo}>
                                 <div className={styles.Overlay}>
-                                    <CreatorBadge color={'#fff'} username={'eduburner'} profilelink={'/'} />
-                                    <div className={styles.BannerDetails}>
-                                        <button>
-                                            
-                                        </button>
+
+                                    <div className={styles.Top}>
+                                        <h2 className={styles.BannerTitle}>
+                                            DROP JAN :
+                                        </h2>
+                                        <CreatorBadge color={'#fff'} username={'eduburner'} profilelink={'/'} />
                                     </div>
+
+                                    <img draggable="false" className={styles.BannerLogo} src="/Essentials/designscapelogo.png"  />
+
                                 </div>
                                 <video className={styles.Video} src="Essentials/Banners/designscape.webm" loop autoPlay muted></video>
                             </div>

@@ -25,7 +25,7 @@ const Nav: React.FC = () => {
 
         <div className={styles.TopContent}>
 
-          <LogoBadge width={30} height={30} />
+          <LogoBadge color={'#111'} width={30} height={30} />
 
           <SearchBar />
 

@@ -6,7 +6,7 @@ const SCard = () => {
     return (
         <div className={styles.SCard}>
             <div className={styles.Top}>
-                <LogoBadge width={18} height={18} />
+                <LogoBadge color={'#FF4834'} width={18} height={18} />
                 <div className={styles.TrendBadge}>
                     <Trending height={70} width={70}/>
                 </div>
