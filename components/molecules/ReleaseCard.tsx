@@ -16,6 +16,7 @@ const ReleaseCard: React.FC<ReleaseCardProps> = ({ profilelink, creatorlogo, nam
             <img
                 className={styles.CardBanner}
                 src={creatorlogo}
+                draggable="false"
             />
 
             <div className={styles.CardDetails}>

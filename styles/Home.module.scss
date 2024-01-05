@@ -10,7 +10,7 @@ $CarbonDust: #232323;
 @mixin SubTitle {
     font-family: Burner Font;
     font-size: 3rem;
-    letter-spacing: -0.18rem;
+    letter-spacing: -0.16rem;
     line-height: 110%;
     font-weight: 600;
     text-transform: lowercase;
@@ -46,6 +46,10 @@ $CarbonDust: #232323;
     gap: 10rem;
     background-color: #fff;
 
+    @media screen and (max-width: 1000px) {
+        padding: 2rem 2rem;
+    }
+
     .Container {
         display: flex;
         width: 100%;
@@ -53,6 +57,9 @@ $CarbonDust: #232323;
         align-items: center;
         justify-content: space-between;
         max-width: 180rem;
+
+
+
     }
 
     .Updates {
@@ -61,10 +68,22 @@ $CarbonDust: #232323;
         align-items: center;
         gap: 3rem;
         width: 100%;
+
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2.6rem;
+        }
+
         .UpdatesContainer {
             display: flex;
             flex-direction: column;
             gap: 2rem;
+
+            @media screen and (max-width: 1000px) {
+                gap: 2.6rem;
+            }
+
             .Heading {
                 display: flex;
                 flex-direction: column;
@@ -84,6 +103,12 @@ $CarbonDust: #232323;
             align-items: center;
             gap: 0.4rem;
             width: 100%;
+
+            @media screen and (max-width: 1000px) {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
             .BannerVideo {
                 display: flex;
                 height: 34rem;
@@ -116,7 +141,7 @@ $CarbonDust: #232323;
                         width: 100%;
                         .BannerTitle{
                             @extend .SubHeading;
-                            // font-family: Burner Font;
+                            font-family: Burner Font;
                             font-size: 1.3rem;
                             // letter-spacing: 0.02rem;
                             font-weight: 700;

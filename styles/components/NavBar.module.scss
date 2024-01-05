@@ -121,8 +121,6 @@ $CarbonDust: #232323;
 
     @media screen and (max-width: 800px) {
         padding: 1rem 2.5rem;
-        // background-color: #0d0d0d;
-        background-color: #0b0b0b;
     }
 
     .TopContent {
@@ -143,6 +141,7 @@ $CarbonDust: #232323;
 
             @media screen and (max-width: 800px) {
                 gap: 2rem;
+                display: none;
             }
 
             .User {

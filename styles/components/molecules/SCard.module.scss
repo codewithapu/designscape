@@ -23,6 +23,11 @@
     border: 0.4rem solid transparent;
 
     @include Smooth();
+
+    @media screen and (max-width: 1000px) {
+        width: 100%;
+    }
+
     &:hover {
         border: 0.4rem solid #f4f0e3;
         gap: 1rem;
@@ -42,6 +47,10 @@
         width: 100%;
         object-fit: contain;
         user-select: none;
+
+        @media screen and (max-width: 1000px) {
+            height: 22rem;
+        }
     }
     .CardLabel {
         font-family: Burner Font;
