@@ -18,7 +18,7 @@ const ReleaseCard: React.FC<ReleaseCardProps> = ({ profilelink, name, username }
             />
 
             <div className={styles.CardDetails}>
-                <CreatorBadge username={username} profilelink={profilelink} />
+                <CreatorBadge color={'#000'} username={username} profilelink={profilelink} />
                 <h2 className={styles.ReleaseTitle}>
                     {name}
                 </h2>

@@ -5,6 +5,7 @@ import Link from 'next/link';
 import SCard from 'components/molecules/SCard';
 import CreatorBadge from 'components/atoms/CreatorBadge';
 import ReleaseCard from 'components/molecules/ReleaseCard';
+import Button from 'components/Button';
 
 
 const Home: React.FC = () => {
@@ -38,7 +39,15 @@ const Home: React.FC = () => {
                         <div className={styles.InnerContainer}>
                             <SCard />
                             <div className={styles.BannerVideo}>
-                                <video className={styles.Video}  src="Essentials/Banners/designscape.webm" loop autoPlay muted></video>
+                                <div className={styles.Overlay}>
+                                    <CreatorBadge color={'#fff'} username={'eduburner'} profilelink={'/'} />
+                                    <div className={styles.BannerDetails}>
+                                        <button>
+                                            
+                                        </button>
+                                    </div>
+                                </div>
+                                <video className={styles.Video} src="Essentials/Banners/designscape.webm" loop autoPlay muted></video>
                             </div>
                         </div>
 

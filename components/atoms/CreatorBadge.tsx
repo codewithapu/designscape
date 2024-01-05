@@ -5,14 +5,15 @@ import styles from 'styles/components/atoms/CreatorBadge.module.scss'
 interface CreatorBadgeProps {
     profilelink: string;
     username: string;
+    color: string;
 }
 
-const CreatorBadge: React.FC<CreatorBadgeProps> = ({ profilelink, username }) => {
+const CreatorBadge: React.FC<CreatorBadgeProps> = ({ profilelink, color, username }) => {
     return (
 
         <div className={styles.CreatorBadge}>
             <a className={styles.BadgeContainer}>
-                <p className={styles.Label}>
+                <p className={styles.Label} style={{color: color}}>
                     {username}
                 </p>
 

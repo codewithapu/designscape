@@ -46,7 +46,6 @@ $CarbonDust: #232323;
     gap: 10rem;
     background-color: #fff;
 
-
     .Container {
         display: flex;
         width: 100%;
@@ -54,7 +53,6 @@ $CarbonDust: #232323;
         align-items: center;
         justify-content: space-between;
         max-width: 180rem;
-        
     }
 
     .Updates {
@@ -80,7 +78,7 @@ $CarbonDust: #232323;
             }
         }
 
-        .InnerContainer{
+        .InnerContainer {
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -92,17 +90,39 @@ $CarbonDust: #232323;
                 background-color: #ebe6d2;
                 border-radius: 2rem;
                 border: 0.4rem solid #f4f0e3;
-    
+
                 overflow: hidden;
-    
+
                 width: 100%;
+                position: relative;
+
+                .Overlay {
+                    position: absolute;
+                    width: 20%;
+                    height: 100%;
+                    left: 0;
+                    z-index: 10;
+                    padding: 4rem;
+
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    // background: linear-gradient(90deg, #d5ccae 0%, rgba(244, 240, 227, 0) 100%);
+                    .BannerTitle{
+                        @extend .SubHeading;
+                        font-size: 2.6rem;
+                        text-transform: lowercase;
+                        text-wrap: nowrap;
+                        color: #fff;
+                    }
+                }
                 .Video {
+                    z-index: 5;
                     height: 100%;
                     width: 100%;
                     object-fit: cover;
                 }
             }
         }
-
     }
 }
