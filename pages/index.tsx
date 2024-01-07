@@ -48,7 +48,7 @@ const Home: React.FC = () => {
                                         <CreatorBadge color={'#fff'} username={'eduburner'} profilelink={'/'} />
                                     </div>
 
-                                    <img draggable="false" className={styles.BannerLogo} src="/Essentials/designscapelogo.png"  />
+                                    <img draggable="false" className={styles.BannerLogo} src="/Essentials/designscapelogo.png" />
 
                                 </div>
                                 <video className={styles.Video} src="Essentials/Banners/designscape.webm" loop autoPlay muted></video>
@@ -56,6 +56,13 @@ const Home: React.FC = () => {
                         </div>
 
 
+                    </div>
+
+                    <div className={styles.Academy}>
+                        <div className={styles.Heading}>
+                            <p className={styles.SubHeading}>b.academy </p>
+                            <h2 className={styles.SubTitle}>Courses made <br />just for you <br /> </h2>
+                        </div>
                     </div>
 
                 </div>

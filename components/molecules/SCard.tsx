@@ -8,7 +8,7 @@ const SCard = () => {
             <div className={styles.Top}>
                 <LogoBadge color={'#FF4834'} width={18} height={18} />
                 <div className={styles.TrendBadge}>
-                    <Trending height={70} width={70}/>
+                    <Trending height={80}/>
                 </div>
             </div>
             <img className={styles.CardBanner} draggable="false" src="https://ik.imagekit.io/eduburner/DesignScape/DSCAPE?updatedAt=1704275139774" />
