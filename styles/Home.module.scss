@@ -14,6 +14,7 @@ $CarbonDust: #232323;
     line-height: 110%;
     font-weight: 600;
     text-transform: lowercase;
+    text-wrap: nowrap;
 
     // display: none;
 }
@@ -169,7 +170,16 @@ $CarbonDust: #232323;
             padding: 4.6rem 5rem;
             background-color: #161616;
             width: 100%;
+            gap: 4rem;
             border-radius: 2rem;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .Courses{
+                display: flex;
+                gap: 1rem;
+                flex-direction: row;
+            }
 
             .Heading {
                 display: flex;

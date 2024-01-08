@@ -6,6 +6,7 @@ import SCard from 'components/molecules/SCard';
 import CreatorBadge from 'components/atoms/CreatorBadge';
 import ReleaseCard from 'components/molecules/ReleaseCard';
 import Button from 'components/Button';
+import CourseCard from 'components/atoms/Home/CourseCard';
 
 
 const Home: React.FC = () => {
@@ -63,6 +64,38 @@ const Home: React.FC = () => {
                             <p className={styles.SubHeading}>b.academy </p>
                             <h2 className={styles.SubTitle}>Courses made <br />just for you <br /> </h2>
                         </div>
+
+                        <div className={styles.Courses}>
+                            <CourseCard
+                                cardtitle={'craft the reality'}
+                                carddescription={'odyssey to master ux designing from scratch'}
+                                profilelink={'/'}
+                                cardcategory={'ux'}
+                                username={'dtf'}
+                                bannerurl={'https://i.ibb.co/CQL8GTT/Slide-16-9-13.png'}
+                            />
+
+                            <CourseCard
+                                cardtitle={'craft the reality'}
+                                carddescription={'odyssey to master ux designing from scratch'}
+                                profilelink={'/'}
+                                cardcategory={'dev'}
+                                username={'dtf'}
+                                bannerurl={'https://i.ibb.co/CQL8GTT/Slide-16-9-13.png'}
+                            />
+
+                            <CourseCard
+                                cardtitle={'craft the design system'}
+                                carddescription={'odyssey to master ux designing from scratch'}
+                                profilelink={'/'}
+                                cardcategory={'ux'}
+                                username={'dtf'}
+                                bannerurl={'https://i.ibb.co/CQL8GTT/Slide-16-9-13.png'}
+                            />
+
+                        </div>
+
+
                     </div>
 
                 </div>

@@ -173,7 +173,11 @@ $CarbonDust: #232323;
 
                 padding: 1.8rem 2rem;
 
-                background-color: #111;
+                background-color: #161616;
+
+                &:hover{
+                    background-color: #000;
+                }
             }
 
             .NavLinks {
